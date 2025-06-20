@@ -1,0 +1,1 @@
+print('Running artifact retirement agent...')
