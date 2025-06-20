@@ -1,1 +1,5 @@
-location = "eastus"
+location       = "eastus"
+openai_key     = "your-openai-key"
+azdo_pat       = "your-azdo-pat"
+gh_token       = "your-gh-token"
+container_image = "ghcr.io/your-org/artifact-retirement-agent:latest"
