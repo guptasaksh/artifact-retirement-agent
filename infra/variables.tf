@@ -1,29 +1,24 @@
 variable "location" {
-  description = "Azure region"
-  type        = string
-  default     = "eastus"
+  type    = string
+  default = "eastus"
 }
 
-variable "openai_key" {
-  description = "Azure OpenAI API Key"
-  type        = string
-  sensitive   = true
+variable "project_name" {
+  type = string
+  default = "ai-devops-app"
 }
 
-variable "azdo_pat" {
-  description = "Azure DevOps Personal Access Token"
-  type        = string
-  sensitive   = true
+variable "environment" {
+  type = string
+  default = "dev"
 }
 
-variable "gh_token" {
-  description = "GitHub Personal Access Token"
-  type        = string
-  sensitive   = true
-}
+# variable "openai_sku" {
+#   type    = string
+#   default = "S0"
+# }
 
-variable "container_image" {
-  description = "Container image for the agent"
-  type        = string
-  default     = "ghcr.io/your-org/artifact-retirement-agent:latest"
-}
+# variable "openai_model" {
+#   type    = string
+#   default = "gpt-35-turbo"
+# }
